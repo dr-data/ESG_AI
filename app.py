@@ -162,7 +162,7 @@ def main(start_data, end_data):
 
         ####
         URL_Expander.write(f"#### Sample Articles")
-        link_df = df_company[["DATE", "URL"]].head(20).copy()
+        link_df = df_company[["DATE", "URL"]].head(5).copy()
         # link_df["URL"] = link_df["URL"].apply(lambda R: f"[{R}]({R})")
         link_df["ARTICLE"] = link_df.URL.apply(get_clickable_name)
         link_df = link_df[["DATE", "ARTICLE"]].to_markdown(index=False)
