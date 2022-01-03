@@ -82,13 +82,13 @@ def main(start_data, end_data):
 
     ###### SET UP PAGE ######
     icon_path = os.path.join(".", "raw", "esg_ai_logo.png")
-    st.set_page_config(page_title="ESG AI", page_icon=icon_path,
+    st.set_page_config(page_title="Green Chain", page_icon=icon_path,
                        layout='centered', initial_sidebar_state="collapsed")
     _, logo, _ = st.columns(3)
     logo.image(icon_path, width=200)
     style = ("text-align:center; padding: 0px; font-family: arial black;, "
              "font-size: 400%")
-    title = f"<h1 style='{style}'>ESG_hihi<sup>AI</sup></h1><br><br>"
+    title = f"<h1 style='{style}'>Green Chain, ESG Score powered by <sup>AI</sup></h1><br><br>"
     st.write(title, unsafe_allow_html=True)
 
 
