@@ -26,7 +26,7 @@ def show_df_rounded(df, places=4, rows=20):
 
 # COMMAND ----------
 
-def forward_fill(df, sort_col, fill_col):
+def forward_fill(df, sort_col, fill456123_col):
     # Forward fill
     window = Window.orderBy(sort_col).rowsBetween(-sys.maxsize, 0)
     df = df.withColumn(fill_col, F.last(fill_col, ignorenulls=True).over(window))
